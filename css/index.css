@@ -1,0 +1,27 @@
+@charset 'utf-8';
+/* 스킵스타일 시작 */
+.skip_menu{
+  background-color:#999999;
+  padding:10px;
+  position:absolute;
+  left:0;
+  top:-100%;
+  width:100%;
+  transition:0.2s;
+}
+.skip_menu.active{
+  top:0;
+}
+.skip_menu>p{
+  text-align:center;
+}
+.skip_menu>p>a{
+  font-weight:bold;
+  font-size:24px;
+  color:#ffffff;
+}
+.skip_menu>p>a:hover{
+  text-decoration:underline;
+}
+/* 스킵스타일 끝 */
+
