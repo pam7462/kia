@@ -1,7 +1,8 @@
 @charset 'utf-8';
 
+/* 기본스타일/PC스타일 시작 */
 .content{
-  padding:0 50px;
+  padding:0 3.90625%;
 }
 
 /* 스킵스타일 시작 */
@@ -79,5 +80,59 @@
 .large_nav ul:first-child a{
   font-weight:bold;
 }
-
+.logo{
+  position: absolute;
+  left:46%;
+  top:41px;
+  transform:translateX(-50%);
+}
 /* 헤더스타일 끝 */
+
+
+
+/* 기본스타일 끝 */
+
+/* 가로해상도 1280px 시작 */
+@media (max-width:1279px){
+  .content{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+/* 가로해상도 1280px 끝 */
+
+/* 가로해상도 1080px 시작 */
+@media (max-width:1079px){
+  .large_nav ul:last-child a{
+    font-size:16px;
+  }
+}
+/* 가로해상도 1080px 끝 */
+
+/* 가로해상도 1024px 시작 */
+@media (max-width:1023px){
+  .logo{
+    left:2%;
+    transform:translateX(0%);
+  }
+  .article.large_nav{
+    justify-content:flex-end;
+  }
+  .article.large_nav ul:first-child{
+    margin-right:3%;
+  }
+  
+}
+/* 가로해상도 1024px 끝 */
+
+/* 가로해상도 940px 시작 */
+@media (max-width:939px){
+  .large_nav ul:first-child a{
+    font-size:16px;
+  }
+  .large_nav ul:last-child a{
+    font-size:14px;
+  }
+
+}
+/* 가로해상도 940px 끝 */
