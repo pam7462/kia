@@ -125,6 +125,9 @@ body{
   height:18px;
   background-image:url('../images/radio.webp');
 }
+.car_list>li:first-child>p.active::before{
+  background-position-x:-18px
+}
 .car_list>li:first-child>p>label::before{
   content:'';
   display:inline-block;
@@ -132,24 +135,28 @@ body{
   height:23px;
   background-image:url('../images/radio_car.webp');
 }
+.car_list>li:first-child>p.active>label::before{
+  background-position-x:-48px
+}
 .car_list>li:first-child>p:nth-child(1)>label::before{
   background-position-y:0px;
 }
 .car_list>li:first-child>p:nth-child(2)>label::before{
-  background-position-y:-23px;
+  background-position-y:-25px;
 }
 .car_list>li:first-child>p:nth-child(3)>label::before{
-  background-position-y:-46px;
+  background-position-y:-48px;
 }
 .car_list>li:first-child>p:nth-child(4)>label::before{
-  background-position-y:-69px;
+  background-position-y:-71px;
 }
 .car_list>li:first-child>p:nth-child(5)>label::before{
-  background-position-y:-93px;
+  background-position-y:-95px;
 }
 .car_list>li:first-child>p>input{
   display:none;
 }
+
 
 
 @media (max-width:1200px){

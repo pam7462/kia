@@ -17,4 +17,10 @@ $(function(){
       $(this).parent().addClass('active');
     }   
   })
+
+  // 자동차 종류 선택
+  $('.car_list p').click(function(){
+    $('.car_list p').removeClass('active');
+    $(this).addClass('active');
+  });
 })
