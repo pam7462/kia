@@ -26,14 +26,17 @@ body{
 }
 
 /* 헤더 */
-.logo{
-  display:none;
-}
 .header{
+  position: relative;
   background-color:#000000;
 }
+.logo{
+  position:absolute;
+  left:42%;
+  top:47%;
+}
 .header a{
-  color:#ffffff;
+  color:rgba(255,255,255,0.5);
 }
 .header .article>.content,.header .article>.content>ul{
   display:flex;
@@ -54,7 +57,6 @@ body{
 }
 .small_nav a{
   font-size:x-small;
-  color:rgba(255,255,255,0.5);
   transition:0.1s;
 }
 .small_nav a:hover{
@@ -83,15 +85,42 @@ body{
   right:-4px;
   bottom:0px;
 }
-.header .large_nav .content{
+.large_nav .content{
   height:56px;
 }
+.large_nav ul:first-child li{
+  padding-right:60px;
+}
+.large_nav ul:last-child li{
+  padding-left:30px;
+}
+.large_nav a{
+  font-size:large;
+}
+.large_nav ul:first-child a{
+  font-weight:bold;
+  color:#ffffff;
+}
 
-
-
-
-
-
+@media (max-width:1200px){
+  .large_nav ul:first-child li{
+    padding-right:46px;
+  }
+  .large_nav ul:last-child li{
+    padding-left:24px;
+  }
+}
+@media (max-width:1100px){
+  .large_nav a{
+    font-size:medium;
+  }
+  .large_nav ul:first-child li{
+    padding-right:40px;
+  }
+  .large_nav ul:last-child li{
+    padding-left:20px;
+  }
+}
 
 /* 테블릿 959이하 */
 @media (max-width:959px){
