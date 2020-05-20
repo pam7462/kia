@@ -112,27 +112,48 @@ body{
   left:50%;
   top:100%;
   transform:translateX(-50%);
+  display:none;
+}
+.car_list.active{
+  display:block;
 }
 .car_list>li{
   display:flex;
   flex-flow:row wrap;
   justify-content:center;
 }
+.car_list>li:first-child{
+  border-bottom:1px solid #dddddd;
+}
+.car_list>li:first-child>p{
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+  height:80px;
+  margin-right:30px;
+}
+
 .car_list>li:first-child>p::before{
   content:'';
   display:inline-block;
   width:18px;
   height:18px;
+  margin-right:10px;
   background-image:url('../images/radio.webp');
 }
 .car_list>li:first-child>p.active::before{
   background-position-x:-18px
+}
+.car_list>li:first-child>p.active>label{
+  font-weight:bold;
+  color:#d70f26;
 }
 .car_list>li:first-child>p>label::before{
   content:'';
   display:inline-block;
   width:48px;
   height:23px;
+  margin-right:6px;
   background-image:url('../images/radio_car.webp');
 }
 .car_list>li:first-child>p.active>label::before{
@@ -155,6 +176,35 @@ body{
 }
 .car_list>li:first-child>p>input{
   display:none;
+}
+.car_list>li:last-child{
+  padding: 20px 0;
+  justify-content:space-between;
+}
+.car_list>li:last-child>p{
+  width:18%;
+  text-align:center;
+}
+.car_list>li:last-child>p>img{
+  width:100%;
+}
+@keyframes car_rotate{
+  0%{transform:rotateY(0deg);}
+  50%{transform:rotateY(180deg) scale(1.2);}
+  100%{transform:rotateY(360deg);}
+}
+.car_list.active>li:last-child>p>img{
+  animation-name:car_rotate;
+  animation-duration:0.3s;
+}
+
+.car_list>li:last-child>p>span{
+  font-weight:bold;
+  font-size:medium;
+}
+.car_list>li:last-child>p:hover>span{
+  color:#d70f26;
+  text-decoration:underline;
 }
 
 

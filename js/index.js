@@ -12,15 +12,26 @@ $(function(){
   tgl_nav.click(function(){
     if($(this).parent().hasClass('active')){
       tgl_nav.parent().removeClass('active');
+      // $('#car_show').removeClass('active');
     }else{
       tgl_nav.parent().removeClass('active');
       $(this).parent().addClass('active');
     }   
   })
+  $('#car_show').click(function(){
+    $(this).next().toggleClass('active');
+  })
 
   // 자동차 종류 선택
-  $('.car_list p').click(function(){
-    $('.car_list p').removeClass('active');
+  $('.car_list>li:first-child>p').click(function(){
+    $('.car_list>li:first-child>p').removeClass('active');
     $(this).addClass('active');
   });
+
+  // 자동차 회전 지연시간
+  var rotateItem=$('.car_list>li:last-child>p');
+  for(var cnt=0;cnt<31;cnt++){
+    rotateItem.eq(cnt).css('animation-delay','0.'+(cnt+1)+'s');
+  }
+  
 })
