@@ -36,4 +36,18 @@ $(function(){
     $(this).toggleClass('active');
     // $('.nav').slideToggle();
   })
+
+  // en 호버이벤트
+  $('.search').before('<li class="en"><a href="#">EN</a></li>');
+  
+  $(window).resize(function(){
+    var winWidth=$(window).width();
+    if(winWidth>=770){
+      $('.en').hide();
+    }else{
+      $('.en').show();
+    }
+  });
+    
+
 })
