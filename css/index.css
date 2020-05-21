@@ -30,11 +30,38 @@ body{
   position: relative;
   background-color:#000000;
 }
+.header::before{
+  content:'';
+  display:block;
+  width:100%;
+  height:15vw;
+  background-image:url('../images/top_bannner.jpg');
+  background-size:cover;
+  display:none;
+}
+
 .logo{
   position:absolute;
   left:42%;
   top:47%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
+h1 #tgl_nav_btn{
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:space-between;
+  width:26px;
+  height:20px;
+  cursor: pointer;
+  display:none;
+}
+h1 #tgl_nav_btn li{
+  height:2px;
+  background-color:#ffffff;
+}
+
 .header a{
   color:rgba(255,255,255,0.5);
 }
@@ -265,6 +292,21 @@ body{
 
 /* 테블릿 959이하 */
 @media (max-width:959px){
+  .logo {
+    left: 3%;
+  }
+  .header .article.large_nav>.content,.header .article.large_nav>.content>ul {
+    justify-content:flex-end;
+  }
+  .large_nav>.content>ul:first-child>li{
+    padding: 17px 10px;
+  }
+  .large_nav>.content>ul:last-child>li{
+    padding: 17px 6px;
+  }
+  .large_nav>.content>ul:last-child a {
+    font-size:small;
+  }
   .car_list>li:first-child{
     display:none;
   }
@@ -276,9 +318,28 @@ body{
   }
 }
 
+/* 모바일 769이하 */
+@media (max-width:769px){
+  .header::before{
+    display:block;
+  }
+  .logo{
+    position:static;
+    width:100%;
+    background-color:#000000;
+    left:0;
+    padding:10px;
+  }
+  .logo #tgl_nav_btn{
+    display:flex;
+  }
+  .logo img{
+    width:50px;
+  }
+  .nav{display:none;}
+}
 
-
-/* 모바일 639이하 */
+/* 639이하 */
 @media (max-width:639px){
   .car_list>li:last-child>p{
     width:45%;
