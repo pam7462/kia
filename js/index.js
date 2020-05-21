@@ -40,7 +40,10 @@ $(function(){
   // en 호버이벤트
   $('.search').before('<li class="en"><a href="#">EN</a></li>');
   
+  // 윈도우 리사이즈 이벤트
   $(window).resize(function(){
+    $('.nav_btn').parent().removeClass('active');
+    $('.nav_btn').next().removeClass('active');
     var winWidth=$(window).width();
     if(winWidth>=770){
       $('.en').hide();
