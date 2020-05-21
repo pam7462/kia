@@ -34,5 +34,6 @@ $(function(){
   // 버거이벤트
   $('#tgl_nav_btn').click(function(){
     $(this).toggleClass('active');
+    // $('.nav').slideToggle();
   })
 })
