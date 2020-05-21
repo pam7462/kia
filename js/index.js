@@ -29,9 +29,9 @@ $(function(){
   });
 
   // 자동차 회전 지연시간
-  var rotateItem=$('.car_list>li:last-child>p');
-  for(var cnt=0;cnt<31;cnt++){
-    rotateItem.eq(cnt).css('animation-delay','0.'+(cnt+1)+'s');
+  var rotateItem=$('.car_list>li:last-child>p>img');
+  for(var cnt=0;cnt<rotateItem.length;cnt++){
+    rotateItem.eq(cnt).css('animation-delay',(cnt+10)*30+'ms');
   }
   
 })
