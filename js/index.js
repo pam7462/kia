@@ -12,12 +12,13 @@ $(function(){
   tgl_nav.click(function(){
     if($(this).parent().hasClass('active')){
       tgl_nav.parent().removeClass('active');
-      // $('#car_show').removeClass('active');
     }else{
       tgl_nav.parent().removeClass('active');
       $(this).parent().addClass('active');
+      tgl_nav.next().removeClass('active');
     }   
   })
+
   $('#car_show').click(function(){
     $(this).next().toggleClass('active');
   })

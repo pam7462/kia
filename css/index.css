@@ -107,6 +107,31 @@ body{
   font-weight:bold;
   color:#ffffff;
 }
+.sub_nav{
+  position:absolute;
+  left:50%;
+  top:100%;
+  transform:translateX(-50%);
+  display:flex;
+  flex-flow:row wrap;
+  background-color:#ffffff;;
+  height:auto !important;
+  padding:20px 60px;
+  display:none;
+}
+.sub_nav>li{
+  width:25%;
+  padding: 10px 0;
+}
+.sub_nav>li>a{
+  color:#333333 !important;
+}
+.sub_nav>li>a:hover{
+  color:#d70f26 !important;
+  text-decoration:underline;
+}
+
+
 .car_list{
   position:absolute;
   left:50%;
