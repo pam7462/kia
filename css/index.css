@@ -232,21 +232,36 @@ body{
   .large_nav>.content>ul:last-child>li{
     padding-left:20px;
   }
+  .car_list>li:last-child>p{
+    width:23%;
+  }
 }
+
+
+
 
 /* 테블릿 959이하 */
 @media (max-width:959px){
-
+  .car_list>li:first-child{
+    display:none;
+  }
+  .car_list>li:last-child>p{
+    width:30%;
+  }
 }
-
-
-
-
-
 
 
 
 /* 모바일 639이하 */
 @media (max-width:639px){
+  .car_list>li:last-child>p{
+    width:45%;
+  }
+}
 
+/* 360이하 */
+@media (max-width:359px){
+  .car_list>li:last-child>p{
+    width:100%;
+  }
 }
