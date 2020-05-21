@@ -8,18 +8,14 @@ $(function(){
   });
 
   // 토글네비
-  var tgl_nav=$('.large_nav>.content>ul:first-child>li>a');
-  tgl_nav.click(function(){
+  $('.nav_btn').click(function(){
     if($(this).parent().hasClass('active')){
-      tgl_nav.parent().removeClass('active');
+      $('.nav_btn').parent().removeClass('active');
     }else{
-      tgl_nav.parent().removeClass('active');
+      $('.nav_btn').parent().removeClass('active');
       $(this).parent().addClass('active');
-      tgl_nav.next().removeClass('active');
+      $('.nav_btn').next().removeClass('active');
     }   
-  })
-
-  $('#car_show').click(function(){
     $(this).next().toggleClass('active');
   })
 
