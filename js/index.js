@@ -31,4 +31,8 @@ $(function(){
     rotateItem.eq(cnt).css('animation-delay',(cnt+10)*30+'ms');
   }
   
+  // 버거이벤트
+  $('#tgl_nav_btn').click(function(){
+    $(this).toggleClass('active');
+  })
 })

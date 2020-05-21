@@ -60,6 +60,18 @@ h1 #tgl_nav_btn{
 h1 #tgl_nav_btn li{
   height:2px;
   background-color:#ffffff;
+  transition:0.3s;
+}
+h1 #tgl_nav_btn.active li:nth-child(1){
+  transform-origin:left top;
+  transform:rotate(44deg);
+}
+h1 #tgl_nav_btn.active li:nth-child(2){
+  background-color:transparent;
+}
+h1 #tgl_nav_btn.active li:nth-child(3){
+  transform-origin:left top;
+  transform:rotate(-44deg);
 }
 
 .header a{
