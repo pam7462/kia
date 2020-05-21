@@ -29,7 +29,7 @@ $(function(){
   });
 
   // 자동차 회전 지연시간
-  var rotateItem=$('.car_list>li:last-child>p>img');
+  var rotateItem=$('.car_list>li:last-child>p');
   for(var cnt=0;cnt<rotateItem.length;cnt++){
     rotateItem.eq(cnt).css('animation-delay',(cnt+10)*30+'ms');
   }
