@@ -412,13 +412,13 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   .header .article.small_nav>.content>ul>li>a{
     font-size:12px;
   }
-  /* .nav{
+  .nav{
     height:0;
     overflow:hidden;
   }
   .nav.active{
     height:auto;
-  } */
+  }
   .car_list,.sub_nav{
     position:static;
     transform:translateX(0);

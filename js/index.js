@@ -35,6 +35,9 @@ $(function(){
   $('#tgl_nav_btn').click(function(){
     $(this).toggleClass('active');
     $('.nav').toggleClass('active');
+    if($(this).attr('class')!='active'){
+      $('.sub_nav,.car_list,.large_nav>.content>ul>li').removeClass('active');
+    }
   })
 
   // en 호버이벤트
