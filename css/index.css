@@ -1,5 +1,9 @@
 @charset 'utf-8';
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.wrap{
+  margin-bottom:300px;
+}
+
 
 /* 기본/pc버전/960이상*/
 body{
@@ -183,11 +187,13 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   color:#d70f26 !important;
   text-decoration:underline;
 }
-
 .car_list,.sub_nav{
   position:absolute;
   left:50%;
   top:100%;
+  z-index:50;
+  background-color:#ffffff;
+  height:auto !important;
   transform:translateX(-50%);
   display:none;
 }
@@ -287,6 +293,10 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 .car_list>li:last-child>p:hover>span{
   color:#d70f26;
   text-decoration:underline;
+}
+
+.main_banner{
+  position: relative;
 }
 .main_box{
   position:relative;
@@ -402,6 +412,27 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 .main_banner:hover .start_stop_btn{
   display:block;
 }
+
+.quick_nav{
+  display:flex;
+  flex-flow:row nowrap;
+}
+.quick_nav>li{
+  width:180px;
+  height:180px;
+  border:1px solid black;
+}
+.quick_nav_box{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  z-index:50;
+  transform:translate(-50%,50%);
+  background-color:#ffffff;
+}
+
+
+
 
 
 
