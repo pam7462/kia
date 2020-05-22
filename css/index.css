@@ -353,16 +353,17 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 }
 .start_stop_btn{
   position: absolute;
-  left:72%;
-  bottom:120px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
   z-index:50;
 }
 .start_stop_btn>button{
   position: relative;
-  width:25px;
-  height:25px;
+  width:100px;
+  height:100px;
   border-radius:50%;
-  background-color:#333333;
+  background-color:rgba(0,0,0,0.3);
   cursor: pointer;
   text-indent:-99999px;
   display:none;
@@ -375,7 +376,7 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   content:'';
   width:0px;
   height:0px;
-  border:6px solid transparent;
+  border:24px solid transparent;
   border-left-color:#ffffff;
 }
 .start_stop_btn>button#stop_btn{
@@ -388,12 +389,18 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   top:50%;
   transform:translate(-15%,-50%);
   content:'';
-  width:2px;
-  height:12px;
+  width:4px;
+  height:36px;
   background-color:#ffffff;
 }
 .start_stop_btn>button#stop_btn::before{
   left:36%;
+}
+.main_banner .start_stop_btn{
+  display:none;
+}
+.main_banner:hover .start_stop_btn{
+  display:block;
 }
 
 

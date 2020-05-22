@@ -75,12 +75,12 @@ $(function(){
 
   // 스타트/스톱 이벤트
   $('#start_btn').click(function(){
-    $(this).hide();
+    $('.start_stop_btn>button').hide();
     $('#stop_btn').show();
     mySwiper.autoplay.start();
   });
   $('#stop_btn').click(function(){
-    $(this).hide();
+    $('.start_stop_btn>button').hide();
     $('#start_btn').show();
     mySwiper.autoplay.stop();
   });
