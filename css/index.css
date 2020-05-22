@@ -412,7 +412,14 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 .main_banner:hover .start_stop_btn{
   display:block;
 }
-
+.quick_nav_box{
+  position:absolute;
+  left:50%;
+  bottom:0;
+  z-index:50;
+  transform:translate(-50%,50%);
+  background-color:#ffffff;
+}
 .quick_nav{
   display:flex;
   flex-flow:row nowrap;
@@ -422,14 +429,7 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   height:180px;
   border:1px solid black;
 }
-.quick_nav_box{
-  position:absolute;
-  left:50%;
-  bottom:0;
-  z-index:50;
-  transform:translate(-50%,50%);
-  background-color:#ffffff;
-}
+
 
 
 
