@@ -301,6 +301,11 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 .main_box{
   position:relative;
 }
+.main_slider_img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 .main_slider_txt{
   position: absolute;
   left:0;
@@ -423,17 +428,56 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 .quick_nav{
   display:flex;
   flex-flow:row nowrap;
+  box-shadow:0 0 10px 10px rgba(0,0,0,0.1);
 }
 .quick_nav>li{
   width:180px;
   height:180px;
-  border:1px solid black;
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  border-right:1px solid rgba(0,0,0,0.2);
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:center;
+  align-items:center;
+  transition:0.3s;
 }
-
-
-
-
-
+.quick_nav>li::before{
+  content:'';
+  width:50px;
+  height:50px;
+  display:block;
+  background-image:url('../images/iconset01.webp');
+}
+.quick_nav>li>p{
+  font-size:large;
+}
+.quick_nav>li.quick_list01{
+  border-left:1px solid rgba(0,0,0,0.2);
+}
+.quick_nav>li.quick_list01::before{
+  background-position-x:0px;
+}
+.quick_nav>li.quick_list02::before{
+  background-position-x:-50px;
+}
+.quick_nav>li.quick_list03::before{
+  background-position-x:-100px;
+}
+.quick_nav>li.quick_list04::before{
+  background-position-x:-150px;
+}
+.quick_nav>li.quick_list05::before{
+  background-position-x:-200px;
+}
+.quick_nav>li:hover{
+  background-color:#d70f26;
+}
+.quick_nav>li:hover::before{
+  background-position-y:-50px;
+}
+.quick_nav>li:hover>p{
+  color:#ffffff;
+}
 
 
 
@@ -507,6 +551,16 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   }
   .sub_nav>li{
     width:33.3333%;
+  }
+  .quick_nav>li{
+    width:140px;
+    height:140px;
+  }
+  .quick_nav>li>p{
+    font-size:medium;
+  }
+  .swiper-pagination{
+    display:none;
   }
 }
 
@@ -619,6 +673,43 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   .sub_nav>li>a {
     font-size:small;
   }
+
+  .swiper-button-prev,
+  .swiper-button-next{
+    display:none;
+  }
+  
+  .main_slider_txt>h2{
+    font-size:large;
+  }
+  .main_slider_txt>a{
+    font-size:small;
+  }
+  .main_slider_img>img{
+    width:150%;
+  }
+  .quick_nav_box{
+    width:90%;
+  }
+  .quick_nav_box>.quick_nav{
+    flex-flow:row wrap;
+  }
+  .quick_nav_box>.quick_nav>li{
+    width:50%;
+    height:50px;
+    flex-flow:row nowrap;
+  }
+  .quick_nav_box>.quick_nav>li.quick_list01{
+    width:100%;
+  }
+  .quick_nav>li::before{
+    width:25px;
+    height:25px;
+    background-size:125px 50px;
+  }
+  .quick_nav>li:hover::before{
+    background-position-y:-25px;
+  }  
 }
 
 
@@ -634,6 +725,30 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 @media (max-width:639px){
   .car_list>li:last-child>p{
     width:45%;
+  }
+  .main_slider_txt>h2{
+    font-size:medium;
+  }
+  .main_slider_txt>a{
+    font-size:x-small;
+  }
+  .quick_nav>li>p {
+    font-size: x-small;
+  }
+}
+
+
+
+
+
+
+
+
+/* 479이하 */
+@media (max-width:479px){
+  .main_slider_txt>h2{
+    font-size:small;
+    margin:14px 0;
   }
 }
 
