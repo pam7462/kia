@@ -110,4 +110,43 @@ $(function(){
       },      
     },
   });
+
+  // 이벤트기아슬라이더
+  var mySwiper3 = new Swiper('.event_kia_slider', {
+    speed:300,
+    spaceBetween:0,
+    slidesPerView:1,
+    centeredSlides:true,
+    loop:true,
+    autoplay:{
+      delay:3000,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },    
+  });
+  // 이벤트기아슬라이더
+  var mySwiper4 = new Swiper('.channel_kia_slider', {
+    speed:300,
+    spaceBetween:0,
+    slidesPerView:1,
+    centeredSlides:true,
+    loop:true,
+    autoplay:{
+      delay:3000,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },    
+  });
 })

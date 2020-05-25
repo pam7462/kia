@@ -13,6 +13,9 @@ h2{
   font-size:xx-large;
   text-align:center;
 }
+h3{
+  font-size:x-large;
+}
 .wrap>section{
   padding:50px 0;
 }
@@ -540,18 +543,20 @@ h2>span{
 .best_kia .swiper-button-next{
   right:10%;
 }
-.swiper-slide img{
+.best_kia .swiper-slide img{
   opacity:0.5;
   transition:0.5s;
 }
-.swiper-slide-active img{
+.best_kia .swiper-slide-active img{
   opacity:1;
   transform:scale(1.2);
 }
-.swiper-slide-prev img,.swiper-slide-next img{
+.best_kia .swiper-slide-prev img,
+.best_kia .swiper-slide-next img{
   opacity:1;
 }
-.swiper-slide-prev img:hover,.swiper-slide-next img:hover{
+.best_kia .swiper-slide-prev img:hover,
+.best_kia .swiper-slide-next img:hover{
   transform:scale(1.05);
 }
 .wrap>.event_channel{
@@ -572,8 +577,62 @@ h2>span{
 .channel_kia>h2{
   text-align:left;
 }
-
-
+.event_channel h3{
+  padding:20px 0;
+}
+.event_channel img{
+  width:100%;
+}
+.event_kia_slider_txt>p>span:nth-child(1){
+  font-weight:bold;
+}
+.channel_kia_slider_txt>h3{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:left;
+  align-items:center;
+}
+.channel_kia_slider_txt>h3>span{
+  display:inline-block;
+  border:1px solid #000000;
+  padding:3px;
+}
+.event_channel .swiper-pagination-fraction, 
+.event_channel .swiper-pagination-custom, 
+.event_channel .swiper-container-horizontal>.swiper-pagination-bullets{
+  bottom:140px;
+}
+.event_channel .swiper-pagination-bullet {
+  width:8px;
+  height:8px;
+  margin:0 6px !important;
+  border-radius:4px;
+}
+.event_channel .swiper-pagination-bullet-active {
+  background-color: #d70f26;
+  width:30px;
+}
+.you_tube{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+}
+.you_tube>h2{
+  width:100%;
+  text-align:left;
+}
+.you_tube>.you_tube_link{
+  width:66.640625%;
+  height:37.5vw;
+}
+.you_tube>.you_tube_link>iframe{
+  width:100%;
+  height:100%;
+}
+.you_tube>.you_tube_txt{
+  width:30%;
+  padding:0 5%;
+}
 
 
 
@@ -629,6 +688,9 @@ h2>span{
 @media (max-width:959px){
   h2{
     font-size:x-large;
+  }
+  h3{
+    font-size:large;
   }
   h2>span{
     font-size:x-large;
@@ -785,6 +847,12 @@ h2>span{
   .swiper-button-prev,
   .swiper-button-next{
     display:none;
+  }
+  .event_kia:hover .swiper-button-prev,
+  .event_kia:hover .swiper-button-next,
+  .channel_kia:hover .swiper-button-prev,
+  .channel_kia:hover .swiper-button-next{
+    display:block;
   }
   
   .main_slider_txt>h2{
