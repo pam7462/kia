@@ -538,6 +538,22 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 .best_kia .swiper-button-next{
   right:10%;
 }
+.swiper-slide img{
+  opacity:0.5;
+  transition:0.5s;
+}
+.swiper-slide-active img{
+  opacity:1;
+  transform:scale(1.2);
+}
+.swiper-slide-prev img,.swiper-slide-next img{
+  opacity:1;
+}
+.swiper-slide-prev img:hover,.swiper-slide-next img:hover{
+  transform:scale(1.05);
+}
+
+
 
 
 
@@ -620,7 +636,6 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   .quick_nav>li>p{
     font-size:medium;
   }
-  
 }
 
 
