@@ -56,7 +56,7 @@ $(function(){
   });
     
   // 메인슬라이더
-  var mySwiper = new Swiper('.swiper-container', {
+  var mySwiper = new Swiper('.main_slider', {
     speed:300,
     effect:'fade',
     loop:true,
@@ -83,5 +83,33 @@ $(function(){
     $('.start_stop_btn>button').hide();
     $('#start_btn').show();
     mySwiper.autoplay.stop();
+  });
+
+  // 베스트기아슬라이더
+  var mySwiper2 = new Swiper('.best_kia_slider', {
+    speed:300,
+    spaceBetween:0,
+    slidesPerView:1.5,
+    centeredSlides:true,
+    loop:true,
+    autoplay:{
+      delay:3000,
+    },
+    
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    breakpoints: {
+      // when window width is >= 770px
+      770: {
+        slidesPerView: 3.5,
+      },      
+    },
+    
   });
 })
