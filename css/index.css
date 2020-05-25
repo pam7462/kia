@@ -1,13 +1,20 @@
 @charset 'utf-8';
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
-.wrap{
-  margin-bottom:300px;
-}
-
 
 /* 기본/pc버전/960이상*/
 body{
   font-family: 'Gothic A1', sans-serif;
+}
+.wrap{
+  margin-bottom:300px;
+}
+h2{
+  font-weight:bolder;
+  font-size:xx-large;
+  text-align:center;
+}
+.wrap>section{
+  padding:50px 0;
 }
 .content{
   width:93.75%;
@@ -319,7 +326,6 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 }
 .main_slider_txt>h2{
   margin:20px 0;
-  font-size:xx-large;
   text-align:center;
   text-shadow:1px 1px 2px rgba(255,255,255,0.3);
 }
@@ -480,17 +486,13 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 }
 
 .best_kia{
-  margin:200px 0;
+  margin-top:150px;
 }
 .best_kia>.best_kia_slider{
   padding-bottom:40px;
 }
-.best_kia>h2,.best_kia>h2>span{
-  font-weight:bolder;
+h2>span{
   font-size:xx-large;
-  text-align:center;
-}
-.best_kia>h2>span{
   color:#d70f26;
   font-weight:bold;
 }
@@ -552,6 +554,26 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 .swiper-slide-prev img:hover,.swiper-slide-next img:hover{
   transform:scale(1.05);
 }
+.wrap>.event_channel{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  padding-left:7%;
+  padding-right:3%;
+}
+.event_channel>.event_kia{
+  width:50%;
+}
+.event_channel>.channel_kia{
+  width:40%;
+  margin-top:100px;
+}
+.event_kia>h2,
+.channel_kia>h2{
+  text-align:left;
+}
+
+
 
 
 
@@ -605,6 +627,12 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 
 /* 테블릿 959이하 */
 @media (max-width:959px){
+  h2{
+    font-size:x-large;
+  }
+  h2>span{
+    font-size:x-large;
+  }
   .logo {
     left: 3%;
   }
@@ -649,6 +677,12 @@ h1 #tgl_nav_btn.active li:nth-child(3){
 
 /* 모바일 769이하 */
 @media (max-width:769px){
+  h2{
+    font-size:large;
+  }
+  h2>span{
+    font-size:large;
+  }
   .header::before{
     display:block;
   }
@@ -784,6 +818,17 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   .quick_nav>li:hover::before{
     background-position-y:-25px;
   }  
+  .wrap>.event_channel{
+    flex-flow:row wrap;
+    justify-content:center;
+    padding-left:3%;
+  }
+  .event_channel>.event_kia{
+    width:100%;
+  }
+  .event_channel>.channel_kia{
+    width:100%;
+  }
 }
 
 
