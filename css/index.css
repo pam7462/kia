@@ -479,6 +479,38 @@ h1 #tgl_nav_btn.active li:nth-child(3){
   color:#ffffff;
 }
 
+.best_kia{
+  margin:200px 0;
+}
+.best_kia>h2,.best_kia>h2>span{
+  font-weight:bolder;
+  font-size:xx-large;
+  text-align:center;
+}
+.best_kia>h2>span{
+  color:#d70f26;
+  font-weight:bold;
+}
+.best_kia_slider_txt>h3{
+  font-weight:500;
+  font-size:x-large;
+  text-align:center;
+}
+.best_kia_slider_txt>p{
+  text-align:center;
+}
+.best_kia_slider_txt>p>span:nth-child(1){
+  color:#d70f26;
+}
+.best_kia_slider_txt>p>span:nth-child(2n+1){
+  padding:0 6px;
+}
+.best_kia_slider_txt>p>span:nth-child(2n){
+  display:inline-block;
+  text-indent:-99999px;
+  width:1px;
+  background-color:rgba(0,0,0,0.2);
+}
 
 
 
