@@ -16,6 +16,9 @@ h2{
 h3{
   font-size:x-large;
 }
+h4{
+  font-size:large;
+}
 .wrap>section{
   padding:50px 0;
 }
@@ -649,6 +652,78 @@ h2>span{
 .you_tube>.you_tube_txt>p>span{
   font-weight:bold;
 }
+.news_notice{
+  display:flex;
+  flex-flow:row wrap;
+}
+.news_notice>.kia_news{
+  width:60%;
+  padding:0 20px
+}
+.kia_news_slider img{
+  width:100%;
+}
+.kia_news_slider .swiper-pagination{
+  top:0;
+  bottom:auto;
+  padding:20px;
+  text-align:right;
+}
+.kia_news_slider .swiper-pagination .swiper-pagination-bullet{
+  background-color:#999999;
+  margin:0 4px !important;
+}
+.kia_news_slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color:#d70f26;
+}
+.kia_news_slider .swiper-button-prev,
+.kia_news_slider .swiper-button-next{
+  display:none;
+}
+.kia_news_slider:hover .swiper-button-prev,
+.kia_news_slider:hover .swiper-button-next{
+  display:block;
+}
+.kia_news_slider p{
+  padding:20px 0 8px
+}
+.kia_news_slider a{
+  font-size:large;
+}
+.kia_news_slider .swiper-slide-duplicate-prev .kia_news_slider_txt{
+  visibility:hidden;
+}
+
+.news_notice>.notice{
+  width:40%;
+  padding:0 20px
+}
+.notice_txt{
+  display:flex;
+  flex-flow:row wrap;
+}
+.notice_txt>li{
+  width:50%;
+  border:1px solid rgba(0,0,0,0.2);
+  padding:20px;
+  transition:0.3s;
+  cursor: pointer;
+}
+.notice_txt>li:hover{
+  background-color:#d70f26;
+}
+.notice_txt>li:nth-child(2n+1){
+  border-right:none;
+}
+.notice_txt>li:nth-child(1),
+.notice_txt>li:nth-child(2){
+  border-bottom:none;
+}
+.notice_txt>li>h4{
+  font-weight:normal;
+  padding-bottom:30px;
+}
+
 
 
 
@@ -926,6 +1001,32 @@ h2>span{
   .you_tube>.you_tube_txt>h3,
   .you_tube>.you_tube_txt>p{
     text-align:center;
+  }
+  .kia_news h4>a,.kia_news h4{
+    font-size:medium;
+  }
+  .news_notice>.kia_news,
+  .news_notice>.notice{
+    width:100%;
+  }
+  .news_notice>.notice{
+    margin-top:100px;
+  }
+  .notice_txt>li{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    border:1px solid rgba(0,0,0,0.2) !important;
+    border-bottom:none !important;
+    padding-bottom:16px;
+  }
+  .notice_txt>li:last-child{
+    border-bottom:1px solid rgba(0,0,0,0.2) !important;
+  }
+  .notice_txt>li>h4 {
+    padding-bottom:0;
   }
 }
 
