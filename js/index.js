@@ -169,4 +169,12 @@ $(function(){
     },    
   });
  
+  // #footer_tgl_btn이벤트
+  $('#footer_tgl_btn').click(function(){
+    $(this).children('ul').toggleClass('active');
+  });
+  $('#footer_tgl_btn>ul>li').click(function(){
+    var selectValue=$(this).children('a').text();
+    $('#footer_tgl_btn span').text(selectValue);
+  });
 })

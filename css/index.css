@@ -728,7 +728,7 @@ h2>span{
   background-color:#333333;
   padding:0 10px;
 }
-.footer,.footer div,.footer p, .footer a{
+.footer,.footer div,.footer p, .footer a,.footer span{
   color:#ffffff;
   font-size:small;
 }
@@ -780,12 +780,12 @@ h2>span{
 }
 .footer_top_right div:nth-child(3){
   position: relative;
+  width:200px;
+  text-align:center;
   border:1px solid #ffffff;
-  padding-left:50px;
-  padding-right:50px;
-  font-size:large;
   cursor: pointer;
 }
+
 .footer_top_right div:nth-child(3)::after{
   content:'^';
   display:block;
@@ -794,10 +794,33 @@ h2>span{
   right:10px;
   top:10px;
 }
+.footer_top_right div:nth-child(3) span{
+  font-size:large;
+}
 .footer_top_right div img{
   vertical-align:middle;
 }
-
+#footer_tgl_btn>ul{
+  position: absolute;
+  left:-1px;
+  top:0;
+  z-index:10;
+  transform:translateY(-100%);
+  width:200px;
+  height:0;
+  border:none;
+  background-color:#333333;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  transition:0.3s;
+}
+#footer_tgl_btn>ul.active{
+  height:200px;
+  border:1px solid #ffffff;
+}
+#footer_tgl_btn>ul>li{
+  text-align:center;
+}
 
 
 
