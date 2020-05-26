@@ -724,6 +724,80 @@ h2>span{
   padding-bottom:30px;
 }
 
+.footer{
+  background-color:#333333;
+  padding:0 10px;
+}
+.footer,.footer div,.footer p, .footer a{
+  color:#ffffff;
+  font-size:small;
+}
+.footer_top{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+  align-items:center;
+  height:80px;
+  border-bottom:1px solid rgba(0,0,0,0.2);
+}
+.footer_top_left,
+.footer_top_right{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:flex-start;
+}
+.footer_top_left p{
+  text-indent:-99999px;
+  width:44px;
+  height:44px;
+  margin-right:12px;
+  background-image:url('../images/iconset02.webp');
+  cursor: pointer;
+}
+.footer_top_left p:nth-child(2){
+  background-position-x:-45px;
+}
+.footer_top_left p:nth-child(3){
+  background-position-x:-89px;
+}
+.footer_top_left p:nth-child(4){
+  background-position-x:-176px;
+}
+.footer_top_left p:nth-child(5){
+  background-position-x:-220px;
+}.footer_top_left p:nth-child(6){
+  background-position-x:-264px;
+}
+.footer_top_right div{
+  height:44px;
+  line-height:44px;
+}
+.footer_top_right div:nth-child(1){
+  margin-right:16px;
+}
+.footer_top_right div:nth-child(2){
+  margin-right:30px;
+}
+.footer_top_right div:nth-child(3){
+  position: relative;
+  border:1px solid #ffffff;
+  padding-left:50px;
+  padding-right:50px;
+  font-size:large;
+  cursor: pointer;
+}
+.footer_top_right div:nth-child(3)::after{
+  content:'^';
+  display:block;
+  font-size:xx-large;
+  position: absolute;
+  right:10px;
+  top:10px;
+}
+.footer_top_right div img{
+  vertical-align:middle;
+}
+
 
 
 
@@ -1027,6 +1101,9 @@ h2>span{
   }
   .notice_txt>li>h4 {
     padding-bottom:0;
+  }
+  .footer_top_right{
+    display:none;
   }
 }
 
