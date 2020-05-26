@@ -728,7 +728,13 @@ h2>span{
   background-color:#333333;
   padding:0 10px;
 }
-.footer,.footer div,.footer p, .footer a,.footer span{
+.footer,
+.footer div,
+.footer p, 
+.footer a,
+.footer span,
+.footer h5,
+.footer li{
   color:#ffffff;
   font-size:small;
 }
